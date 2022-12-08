@@ -1,0 +1,9 @@
+<div id="noData" *ngIf="!inputData || !inputData.length">No data</div>
+<div id="dataList">
+  <div
+    *ngFor="let item of inputData"
+    [ngStyle]="{ color: inputData.length % 2 ? 'red' : 'green' }"
+  >
+    {{ item }}
+  </div>
+</div>
